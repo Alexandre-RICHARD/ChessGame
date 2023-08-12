@@ -18,7 +18,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // Plugin qui ouvrira un onglet à chaque run/build pour montrer la taille des différents package dans les fichiers compilé et aider à mieux les gérer
 const BundleAnalyzerPlugin =
     require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
-const port = 8001;
+const port = 8002;
 
 // Ici on créé les variables défini pour le développement mais qui seront changés si on est en production
 let mode = "development";
@@ -106,7 +106,7 @@ module.exports = {
             filename: "css/[name].css",
         }),
         // Plugin qui ouvrira un onglet à chaque run/build pour montrer la taille des différents package dans les fichiers compilé et aider à mieux les gérer
-        // new BundleAnalyzerPlugin(), //! POur activer ou désactiver
+        // new BundleAnalyzerPlugin(), //! Pour activer ou désactiver
     ],
     // Des plugins visant à améliorer la vitesse de compilation en plus d'en améliorer l'optimisation et la taille
     optimization: {
@@ -155,14 +155,6 @@ module.exports = {
                     },
                 },
             },
-            // Fonts loader
-            {
-                test: /\.(woff2?|eot|ttf|otf)$/,
-                loader: "file-loader",
-                options: {
-                    outputPath: "fonts/",
-                },
-            },
             // Pas de loader pour les images, elles sont traités comme des assets, ce qui change leurs utilisations surtout pour les petites images transformées en base64 sinon
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
@@ -196,19 +188,6 @@ module.exports = {
                         options: {
                             implementation: require("sass"),
                             sourceMap: true,
-                        },
-                    },
-                ],
-            },
-            // PDF loader
-            {
-                test: /\.(pdf)$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]",
-                            outputPath: "static/",
                         },
                     },
                 ],
