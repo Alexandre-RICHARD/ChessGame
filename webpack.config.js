@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 // Pour récupérer nos variables d'environnement en fonction de si on est en prod ou en dev et avoir la bonne adresse d'API
 const Dotenv = require("dotenv-webpack");
@@ -77,6 +78,11 @@ module.exports = {
         },
     },
     plugins: [
+        // Pour configurer correctement Vue.JS
+        new webpack.DefinePlugin({
+            __VUE_OPTIONS_API__: false,
+            __VUE_PROD_DEVTOOLS__: true,
+        }),
         // Pour récupérer nos variables d'environnement en fonction de si on est en prod ou en dev et avoir la bonne adresse d'API
         new Dotenv({
             path: envPath,

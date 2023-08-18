@@ -1,6 +1,6 @@
 {
     "name": "chess_game",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "scripts": {
         "start": "cross-env NODE_ENV=development webpack serve --history-api-fallback",
         "build": "cross-env NODE_ENV=production webpack",
