@@ -2,9 +2,10 @@
 
 Bonjour, bienvenue sur le répo de mon jeu d'échec. C'est l'un des premiers projets que j'ai fait quand j'étais encore à l'école O'clock. Je l'ai repris et abandonné plusieurs fois, intégré à mon portfolio puis séparé de nouveau. Il est aujourd'hui indépendant même si accessible depuis le portfolio. Codé en Vue.JS, il a encore beaucoup d'amélioration prévu que j'espère prendre le temps de mettre en place
 
-Voici [le site](http://chessgame.rial7539.odns.fr/) en question.
+Voici [le site](https://chessgame.alexandre-richard.fr/) en question.
 
-Et voici le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Back) lié.
+Et [son répo](https://github.com/Alexandre-RICHARD/ChessGame)
+Ainsi que le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Back) lié.
 
 ## Historique des versions
 
@@ -32,5 +33,10 @@ Et voici le [répo du serveur](https://github.com/Alexandre-RICHARD/Portfolio-Ba
 ### 1.0.3 `18 août 2023`
 
 -   Rajout de deux lignes de configurations pour webpack et vueJS
+
+### 1.0.4 `21 août 2023`
+
+-   Maintenant que j'ai récupéré le nom de domaine, actualisation de tous les liens sortant
+-   Mise à jour des packages npm
 
 </details>
