@@ -7,7 +7,6 @@ const Loading: React.FC = () => {
         <>
             <div className="loading-cache">
                 <div className="loading-logo-box">
-                    chcvbh
                     <div />
                     <div />
                 </div>

@@ -19,7 +19,6 @@ const App: React.FC = () => {
     return (
         <>
             <LoadingAnimation loading={loading} />
-
             <ChessGame />
         </>
     );

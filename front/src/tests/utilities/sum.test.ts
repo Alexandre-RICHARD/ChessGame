@@ -1,4 +1,6 @@
-import {describe, test, expect, expectTypeOf} from "vitest";
+import {
+    describe, test, expect, expectTypeOf
+} from "vitest";
 import {sum} from "@utilities/sum";
 
 describe("Sum function", () => {
