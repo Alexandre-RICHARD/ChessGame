@@ -3,9 +3,7 @@ import type {PreloadedState} from "@reduxjs/toolkit";
 import mainSlice from "@/store/slices/mainSlice";
 
 // Create the root reducer independently to obtain the RootState type
-const rootReducer = combineReducers({
-    "main": mainSlice
-});
+const rootReducer = combineReducers({main: mainSlice});
 
 export type RootState = ReturnType<typeof rootReducer>;
 

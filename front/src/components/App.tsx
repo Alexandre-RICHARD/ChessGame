@@ -11,16 +11,15 @@ const App: React.FC = () => {
     // Use the typed version of useAppSelector create in hooks.ts
     const loading = useAppSelector(mainState.Loading);
 
-    const LoadingAnimation: React.FC<{ loading: boolean }> = ({ loading }) => {
+    const LoadingAnimation: React.FC<{loading: boolean}> = ({loading}) => {
         if (!loading) return <Loading />;
         return null;
     };
 
     return (
         <>
-            <LoadingAnimation
-                loading={loading}
-            />
+            <LoadingAnimation loading={loading} />
+
             <ChessGame />
         </>
     );

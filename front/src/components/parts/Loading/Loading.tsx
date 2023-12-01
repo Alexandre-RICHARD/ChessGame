@@ -5,7 +5,13 @@ import "./Loading.scss";
 const Loading: React.FC = () => {
     return (
         <>
-            Loading components
+            <div className="loading-cache">
+                <div className="loading-logo-box">
+                    chcvbh
+                    <div />
+                    <div />
+                </div>
+            </div>
         </>
     );
 };
