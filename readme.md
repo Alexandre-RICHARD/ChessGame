@@ -1,3 +1,9 @@
+# ⚠️⚠️⚠️⚠️⚠️
+
+## Ce projet est à l'arrêt. Ce message est général à tous mes projets concernés et à un stade trop initial pour être intéressant. Actuellement arrêté en plein dans son développement, il est très probablement non-fonctionnel ou du moins, pas à 100%.
+
+# ⚠️⚠️⚠️⚠️⚠️
+
 # ChessGame
 
 Bonjour, bienvenue sur le répo de mon jeu d'échec. C'est l'un des premiers projets que j'ai fait quand j'étais encore à l'école O'clock. Je l'ai repris et abandonné plusieurs fois, intégré à mon portfolio puis séparé de nouveau. Il est aujourd'hui indépendant même si accessible depuis le portfolio. Codé en Vue.JS, il a encore beaucoup d'amélioration prévu que j'espère prendre le temps de mettre en place

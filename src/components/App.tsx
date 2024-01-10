@@ -12,7 +12,7 @@ const App: React.FC = () => {
     const loading = useAppSelector(mainState.Loading);
 
     const LoadingAnimation: React.FC<{loading: boolean}> = ({loading}) => {
-        if (!loading) return <Loading />;
+        if (loading) return <Loading />;
         return null;
     };
 
